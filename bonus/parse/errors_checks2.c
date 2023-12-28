@@ -6,7 +6,7 @@
 /*   By: obouhrir <obouhrir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 15:19:50 by amahdiou          #+#    #+#             */
-/*   Updated: 2023/10/05 16:34:42 by obouhrir         ###   ########.fr       */
+/*   Updated: 2023/11/17 19:01:33 by obouhrir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,7 @@ void	map_checker(t_data *utils, int lines)
 		j = -1;
 		while (utils->map[i][++j])
 		{
-			if (utils->map[i][j] && (utils->map[i][j] == '0'
-				|| utils->map[i][j] == 'N' || utils->map[i][j] == 'S'
-					|| utils->map[i][j] == 'E' || utils->map[i][j] == 'W'))
+			if (ft_strchr("0NSWE",utils->map[i][++j] ))
 			{
 				if (j - 1 < 0 || i - 1 < 0 
 					|| j + 2 >= (int)ft_strlen(utils->map[i])

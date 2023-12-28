@@ -6,7 +6,7 @@
 /*   By: obouhrir <obouhrir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 17:16:07 by obouhrir          #+#    #+#             */
-/*   Updated: 2023/10/05 19:13:09 by obouhrir         ###   ########.fr       */
+/*   Updated: 2023/10/12 18:38:30 by obouhrir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@
 #  define BUFFER_SIZE 550
 # endif
 
-# define HEIGHT 740
-# define WIDTH 1150
+# define HEIGHT 900
+# define WIDTH 1500
 
 # define PIXEL_SIZE 50
 # define PIXEL_SIZE_P 3
