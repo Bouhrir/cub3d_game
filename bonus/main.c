@@ -6,7 +6,7 @@
 /*   By: obouhrir <obouhrir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 17:15:15 by obouhrir          #+#    #+#             */
-/*   Updated: 2023/10/09 10:07:18 by obouhrir         ###   ########.fr       */
+/*   Updated: 2024/01/09 21:26:34 by obouhrir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ int	main(int ac, char **av)
 	parse(ac, av, &map, &rgb);
 	pid = fork();
 	if (!pid)
-		system("afplay /Users/obouhrir/Desktop/lo3ba/zalij1.mp3");
+		system("afplay zalij1.mp3");
 	map.rgb = &rgb;
 	map.player = malloc(sizeof(t_player));
 	map_length(&map);

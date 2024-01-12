@@ -6,7 +6,7 @@
 /*   By: obouhrir <obouhrir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 11:15:52 by obouhrir          #+#    #+#             */
-/*   Updated: 2023/10/08 22:28:41 by obouhrir         ###   ########.fr       */
+/*   Updated: 2023/10/05 11:19:44 by obouhrir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	initwall(t_data *map, t_help *norm, int check, double *wallhit)
 	norm->dis = sqrt(pow(map->player->y - wallhit[1], 2)
 			+ pow(map->player->x - wallhit[0], 2))
 		* cos(map->player->view - map->player->ray);
-	norm->wallhight = 72000 / norm->dis;
+	norm->wallhight = 60 * 1200 / norm->dis;
 	norm->ystart = (HEIGHT / 2) - (norm->wallhight / 2);
 	norm->i = norm->ystart;
 	norm->yend = norm->i + norm->wallhight;

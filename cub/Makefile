@@ -6,9 +6,10 @@
 #    By: obouhrir <obouhrir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/30 23:32:27 by obouhrir          #+#    #+#              #
-#    Updated: 2023/12/28 23:37:33 by obouhrir         ###   ########.fr        #
+#    Updated: 2024/01/12 10:28:10 by obouhrir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 NAME    = cub3d
 CC      = cc
@@ -22,7 +23,7 @@ SRC     =  main.c \
 			 exec/event_hooks.c exec/earth.c exec/get_pixels.c exec/event_hooks1.c parse/utils.c
 GNL = ./gnl/get_next_line.a
 LIBMLX	= /Users/obouhrir/MLX42
-HEADERS	= -I ./include -I ../include
+# HEADERS	= -I ./include -I ../include
 LIBS	= ../libmlx42.a -Iinclude -lglfw
  
 
@@ -44,7 +45,7 @@ bonus : all $(NAMEB)
 # 	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
 
 $(NAME) : $(OBJ) $(LIBFT) $(PRINTF) $(GNL)
-	@$(CC) $(CFLAGS) $(MLX) $(OBJ) $(LIBFT) $(LIBS) $(GNL) $(HEADERS) -o $(NAME)
+	@$(CC) $(CFLAGS) $(MLX) $(OBJ) $(LIBFT) $(LIBS) $(GNL)  -o $(NAME)
 	@echo "\033[1;32mSuccessfully compiled $(NAME)!\033[0m"
 
 # Compile object files
