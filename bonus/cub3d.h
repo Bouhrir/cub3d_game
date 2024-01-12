@@ -6,7 +6,7 @@
 /*   By: obouhrir <obouhrir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 17:16:07 by obouhrir          #+#    #+#             */
-/*   Updated: 2023/10/05 19:49:02 by obouhrir         ###   ########.fr       */
+/*   Updated: 2024/01/12 11:13:04 by obouhrir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <fcntl.h>
 # include <limits.h>
 # include "libft/libft.h"
-# include "/Users/obouhrir/MLX42/include/MLX42/MLX42.h"
+# include "../MLX42/include/MLX42/MLX42.h"
 # include "gnl/get_next_line.h"
 
 # ifndef BUFFER_SIZE
